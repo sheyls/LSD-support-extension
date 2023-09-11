@@ -1,0 +1,36 @@
+#Catalog
+
+lsys stick {
+    axiom : X,
+    F => FF,
+    X => F[+X]F[-X]+X
+};
+#stick_angle = 20
+
+lsys weed {
+    axiom : F,
+    F => FF-[XY]+[XY],
+    X => +FY,
+    Y => -FX
+};
+#weed_angle = 22.5
+
+#Drawing example
+
+brush aqua_dart {
+
+    size: 3,
+    color: #0b3954,
+    speed: 300
+
+};
+
+canvas aqua_light {
+
+    high: 4000,
+    width: 4000,
+    color: #087e8b
+};
+
+draw(stick, aqua_dart, aqua_light, 4, 20, 8);
+

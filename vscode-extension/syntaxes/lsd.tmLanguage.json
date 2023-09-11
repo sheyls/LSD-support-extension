@@ -1,0 +1,44 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "LSD:Lindenmayer-System-Drawing",
+    "patterns": [
+        { "include": "#keywords" },
+        { "include": "#tokens" },
+        { "include": "#strings" },
+        { "include": "#colors" },
+        { "include": "#comments" }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.lsd",
+                "match": "\\b(canvas|draw|brush|lsys|axiom|color|size|speed|high|width|if|else|bool|true|false|int|string|float|col|add_rule|change_axiom|repeat)\\b"
+            }]
+        },
+        "tokens": {
+            "patterns": [
+                { "name": "operator.lsd", "match": "\\(==\\|>=\\|<=\\|\\(<\\)\\|\\(>\\)\\|=>\\|\\(\\+\\)\\|\\(-\\)\\|\\(\\*\\)\\|\\(/\\)\\)" },
+                { "name": "constant.numeric.float.lsd", "match": "\\b\\d+\\.\\d+\\b" },
+                { "name": "constant.numeric.int.lsd", "match": "\\b\\d+\\b" },
+                { "name": "variable.name.lsd", "match": "\\b[a-z_][a-z_0-9]*\\b" }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.lsd",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                { "name": "constant.character.escape.lsd", "match": "\\\\[A-Z\\+\\-<\\>\\[\\]\\#\\!&@|%$]+" }
+            ]
+        },
+        "colors": {
+            "name": "constant.color.lsd",
+            "match": "\\#[a-fA-F\\d]{6}"
+        },
+        "comments": {
+            "name": "comment.lsd",
+            "match": "\\#.*"
+        }
+    },
+    "scopeName": "source.lsystem"
+}

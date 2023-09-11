@@ -1,0 +1,62 @@
+
+#Catalog
+
+canvas soft_yellow {
+
+    high: 4000,
+    width: 4000,
+    color: #161032
+}; 
+
+lsys leaf {
+    axiom : A,
+    F => >F<,
+    A => F[+X]FB,
+    B => F[-Y]FA,
+    X => A,
+    Y => B
+};
+#leaf_angle = 45
+
+lsys bushes {
+    axiom : Y,
+    X => X[-FFF][+FFF]FX,
+    Y => YFX[+Y][-Y]
+};
+#bushes_angle = 25.7
+
+lsys bushes_2 {
+    axiom :F,
+    F => FF+[+F-F-F]-[-F+F+F]
+};
+#bushes_angle2 = 22.5
+
+
+lsys bushes_3 {
+    axiom : F,
+    F => F[+FF][-FF]F[-F][+F]F
+};
+#bushes_angle3 = 35
+
+lsys fractal_tree {
+    axiom: FX,
+    X => >[-FX]+FX
+};
+#fractal_tree_angle = 40
+
+#Drawing example
+brush dark_purple {
+
+    size: 2,
+    color: #faff81,
+    speed: 1000
+};
+
+canvas soft_yellow {
+
+    high: 4000,
+    width: 4000,
+    color: #161032
+};
+
+draw(bushes, dark_purple, soft_yellow, 7 , 27.5, 8);

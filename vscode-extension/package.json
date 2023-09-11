@@ -1,0 +1,73 @@
+{
+  "name": "lsd",
+  "displayName": "LSD:Lindenmayer-System-Drawing",
+  "description": "A VS Code extension for compiling `.lsystem` files and draw L-Systems",
+  "version": "1.0.0",
+  "publisher": "sheyls, dalfonso44, JLeiva44",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages"],
+
+  "main": "./extension.js",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sheyls/LSD-Lindenmayer-System-Drawing"
+  },
+
+  
+  "contributes": {
+    "languages": [{
+      "id": "lsd",
+      "aliases": ["LSD:Lindenmayer-System-Drawing", "lsd"],
+      "extensions": [".lsystem"],
+      "configuration": "./language-configuration.json"
+    }],
+      "commands": [
+        {
+          "command": "lsystem.compile",
+          "title": "Compile L-system"
+        }
+      ],
+
+      "menus": {
+        "editor/title/run": [
+            {
+                "command": "lsystem.compile",
+                "when": "resourceFilename =~ /\\.lsystem$/"
+            }
+        ]
+      },
+
+      "configuration": {
+        "title": "LSD: Lindenmayer-System-Drawing",
+        "properties": {
+            "lsd.compilerRoot": {
+                "type": "string",
+                "default": "",
+                "description": "Path to the LSD compiler root directory."
+            }
+        }
+      },
+        "grammars": [{
+          "language": "lsd",
+          "scopeName": "source.lsystem",
+          "path": "./syntaxes/lsd.tmLanguage.json"
+        }]
+    },
+
+    "license": "GNU GENERAL PUBLIC LICENSE",
+    "icon": "icon.png",
+    "galleryBanner": {
+      "color": "#00ced1",
+      "theme": "dark"
+    },
+
+    "activationEvents": [
+      "onLanguage:lsystem"
+    ],
+    
+    "keywords": ["vscode-extension", "lsystem", "compiler"]
+
+}

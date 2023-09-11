@@ -1,0 +1,41 @@
+#Catalog
+
+lsys dragon {
+    axiom : FX,
+    X => X+YF+,
+    Y => -FX-Y
+};
+#dragon_angle = 90
+
+lsys hexagonal_gosper{
+    axiom : XF,
+    X => X+YF++YF-FX--FXFX-YF+,
+    Y => -FX+YFYF++YF+FX--FX-Y
+};
+
+
+#hexagonal_gosper_angle = 60
+
+lsys levy_curve{
+    axiom : F,
+    F => -F++F-
+};
+#levy_curve = 45
+
+#Drawing example
+brush wine {
+
+    size: 3,
+    color: #912f56,
+    speed: 300
+
+};
+
+canvas white {
+
+    high: 4000,
+    width: 4000,
+    color: #eaf2ef
+};
+
+draw(hexagonal_gosper, wine, white, 10 ,90, 10);
