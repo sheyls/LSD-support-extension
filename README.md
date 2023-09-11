@@ -1,9 +1,96 @@
 # LSD-support-extension
 
-`[[_TOC_]]`
+Welcome to the `LSD:Lindenmayer-System-Drawing` extension! This extension provides support for `.lsystem` files, allowing you to write, visualize, and compile L-systems directly within VS Code.
 
-# About LSD: Lindenmayer-System-Drawing
-## Domain-specific language for L-Systems visualization
+- [LSD-support-extension](#lsd-support-extension)
+- [LSD:Lindenmayer-System-Drawing VS Code Extension](#lsdlindenmayer-system-drawing-vs-code-extension)
+    - [Overview](#overview)
+    - [Installation](#installation)
+    - [Features](#features)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
+    - [Compiling L-Systems](#compiling-l-systems)
+    - [Support and Contributions](#support-and-contributions)
+    - [License](#license)
+- [About LSD: The L-system language.](#about-lsd-the-l-system-language)
+  - [Language syntax](#language-syntax)
+    - [Internal types of the language:](#internal-types-of-the-language)
+    - [Reserved words:](#reserved-words)
+    - [Declaration of an l-System](#declaration-of-an-l-system)
+      - [Symbols allowed in rule declaration](#symbols-allowed-in-rule-declaration)
+    - [Change the axiom of an already defined L-System](#change-the-axiom-of-an-already-defined-l-system)
+    - [Add a rule to an already defined L-System](#add-a-rule-to-an-already-defined-l-system)
+    - [Canvas Statement](#canvas-statement)
+    - [To draw L-Systems!](#to-draw-l-systems)
+    - [Operations on types](#operations-on-types)
+    - [Assignment and Creation of variables](#assignment-and-creation-of-variables)
+    - [Conditionals:](#conditionals)
+    - [Cycles:](#cycles)
+    - [Program execution:](#program-execution)
+  - [Compiler Architecture](#compiler-architecture)
+    - [Lexer:](#lexer)
+    - [Parser:](#parser)
+    - [Semantic verification:](#semantic-verification)
+
+# LSD:Lindenmayer-System-Drawing VS Code Extension
+
+### Overview
+
+**Name**: `LSD:Lindenmayer-System-Drawing`  
+**Description**: This extension facilitates the compilation of `.lsystem` files for visualization of L-system drawings.   
+**Version**: `1.0.0`  
+**Maintainers**: sheyls, dalfonso44, JLeiva44 
+
+The `LSD:Lindenmayer-System-Drawing` extension offers language support for `.lsystem` files. This means that the content of these files must follow a specific syntax [(see the lsd lenguage section)](#about-lsd-the-l-system-language), allowing them to accurately represent and visualize L-Systems.
+
+![Extension Icon](icon.png)
+
+### Installation
+
+1. Open **VS Code**.
+2. Navigate to the **Extensions** view by clicking on the square icon on the sidebar.
+3. Search for **LSD:Lindenmayer-System-Drawing**.
+4. Click **Install**.
+
+> **Note**: Ensure that you have VS Code version `^1.75.0` or later.
+
+### Features
+
+- **Syntax Highlighting**: Supports `.lsystem` files to provide a colorful and meaningful representation of the content.
+- **Compilation**: Allows users to compile `.lsystem` files to draw L-Systems.
+
+## Configuration
+
+To utilize the integrated LSD compiler:
+
+1. Clone or download this repository to your local machine.
+2. Navigate to **File > Preferences > Settings** or use the shortcut `Ctrl + ,`.
+3. In the search bar, enter `LSD: Lindenmayer-System-Drawing`.
+4. Look for the `lsd.compilerRoot` setting.
+5. Provide the path to the `compiler` directory inside the cloned/downloaded repository.
+
+This sets the root for the bundled LSD compiler, allowing you to compile `.lsystem` files directly from Visual Studio Code.
+
+## Usage
+
+### Compiling L-Systems
+
+1. Open any `.lsystem` file.
+2. Click the "Compile L-system" button on the top-right corner of the editor window.
+3. If configured correctly, this will compile the `.lsystem` file and produce the appropriate L-System drawing.
+
+### Support and Contributions
+
+For support, questions, or contributions, please head over to our [GitHub repository](https://github.com/sheyls/LSD-Lindenmayer-System-Drawing). Here, you can raise issues or submit pull requests.
+
+### License
+
+This extension is licensed under the [MIT LICENSE](LICENSE).
+
+---
+
+
+# About LSD: The L-system language.
 
 LSD is a DSL :) that aims to visualize L-Systems. An L-System or Lindenmayer system is a formal grammar (a set of rules and symbols) primarily used to model the plant growth process; It can also model the morphology of a variety of organisms. They can also be used to generate self-similar fractals such as iterated function systems. L-systems were introduced and developed in 1968 by the Hungarian biologist and theoretical botanist Aristid Lindenmayer.
 
@@ -321,4 +408,4 @@ Below are some semantic rules of the language:
 - The condition of an ``if`` statement must be of type ``bool``
 - The ``==`` operation is defined for operands of the same type. `
 
-# About 
+**Keywords**: vscode-extension, lsystem, compiler.
