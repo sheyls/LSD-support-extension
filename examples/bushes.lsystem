@@ -1,13 +1,6 @@
 
 #Catalog
 
-canvas soft_yellow {
-
-    high: 4000,
-    width: 4000,
-    color: #161032
-}; 
-
 lsys leaf {
     axiom : A,
     F => >F<,

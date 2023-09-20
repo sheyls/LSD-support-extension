@@ -43,7 +43,7 @@ Welcome to the `LSD:Lindenmayer-System-Drawing` extension! This extension provid
 
 The `LSD:Lindenmayer-System-Drawing` extension offers language support for `.lsystem` files. This means that the content of these files must follow a specific syntax [(see the lsd lenguage section)](#about-lsd-the-l-system-language), allowing them to accurately represent and visualize L-Systems.
 
-![Extension Icon](icon.png)
+![Extension Icon](vscode-extension/icon.png)
 
 ### Installation
 
