@@ -3,7 +3,7 @@
   "displayName": "LSD:Lindenmayer-System-Drawing",
   "description": "A VS Code extension for compiling `.lsystem` files and draw L-Systems",
   "version": "1.0.0",
-  "publisher": "sheyls, dalfonso44, JLeiva44",
+  "publisher": "sheyls",
   "engines": {
     "vscode": "^1.75.0"
   },

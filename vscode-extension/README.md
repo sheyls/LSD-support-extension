@@ -84,22 +84,6 @@ This sets the root for the bundled LSD compiler, allowing you to compile `.lsyst
 3. If configured correctly, this will compile the `.lsystem` file and produce the appropriate L-System drawing.
 **Note: Be carefull about the language syntaxes, if is incorrect, this donn't works.**
 
-<p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
-<p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
-<p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
-<p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
 ###  Getting Help
 1. Click the "Help" button on the top-right corner of the editor window.
 2. This will show a CLI interface for quick access to hexadecimal colors, l-systems types and documentation.
