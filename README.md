@@ -89,15 +89,15 @@ This sets the root for the bundled LSD compiler, allowing you to compile `.lsyst
 </p>
 
 <p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
+  <img src="vscode-extension/2.png" alt="Extension Icon" width="250" height="250"/>
 </p>
 
 <p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
+  <img src="vscode-extension/3.png" alt="Extension Icon" width="250" height="250"/>
 </p>
 
 <p align="center">
-  <img src="vscode-extension/1.png" alt="Extension Icon" width="250" height="250"/>
+  <img src="vscode-extension/4.png" alt="Extension Icon" width="250" height="250"/>
 </p>
 
 ###  Getting Help
