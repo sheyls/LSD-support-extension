@@ -40,13 +40,10 @@ Welcome to the `LSD:Lindenmayer-System-Drawing` extension! This extension provid
 **Name**: `LSD:Lindenmayer-System-Drawing`  
 **Description**: This extension facilitates the compilation of `.lsystem` files for visualization of L-system drawings.   
 **Version**: `1.0.0`  
+**GitHub Repo**: [https://github.com/sheyls/LSD-Lindenmayer-System-Drawing](https://github.com/sheyls/LSD-Lindenmayer-System-Drawing)
 **Maintainers**: sheyls, dalfonso44, JLeiva44 
 
 The `LSD:Lindenmayer-System-Drawing` extension offers language support for `.lsystem` files. This means that the content of these files must follow a specific syntax [(see the lsd lenguage section)](#about-lsd-the-l-system-language), allowing them to accurately represent and visualize L-Systems.
-
-<p align="center">
-  <img src="icon.png" alt="Extension Icon" width="100" height="100"/>
-</p>
 
 
 ### Installation
@@ -84,21 +81,6 @@ This sets the root for the bundled LSD compiler, allowing you to compile `.lsyst
 3. If configured correctly, this will compile the `.lsystem` file and produce the appropriate L-System drawing.
 **Note: Be carefull about the language syntaxes, if is incorrect, this donn't works.**
 
-<p align="center">
-  <img src="1.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
-<p align="center">
-  <img src="2.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
-<p align="center">
-  <img src="3.png" alt="Extension Icon" width="250" height="250"/>
-</p>
-
-<p align="center">
-  <img src="4.png" alt="Extension Icon" width="250" height="250"/>
-</p>
 
 ###  Getting Help
 1. Click the "Help" button on the top-right corner of the editor window.
