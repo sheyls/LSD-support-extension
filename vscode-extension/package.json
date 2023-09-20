@@ -28,7 +28,13 @@
         {
           "command": "lsystem.compile",
           "title": "Compile L-system"
+        },
+
+        {
+          "command": "lsystem.showHelp",
+          "title": "Help"
         }
+
       ],
 
       "menus": {
@@ -37,7 +43,15 @@
                 "command": "lsystem.compile",
                 "when": "resourceFilename =~ /\\.lsystem$/"
             }
-        ]
+        ],
+        "editor/title": [
+          {
+              "command": "lsystem.showHelp",
+              "when": "resourceFilename =~ /\\.lsystem$/",
+              "group": "navigation@1"
+          }
+      ]
+
       },
 
       "configuration": {

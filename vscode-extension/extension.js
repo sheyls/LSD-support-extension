@@ -41,6 +41,18 @@ function activate(context) {
     });
 
     context.subscriptions.push(disposable);
+
+  
+     // Command to Show Help
+     let hdisposable =     vscode.commands.registerCommand('lsystem.showHelp', function() {
+        const pythonScriptPath = path.join(__dirname, 'tools', 'cli.py');
+        const terminal = vscode.window.createTerminal("LSD CLI");
+        terminal.show();
+        terminal.sendText(`python "${pythonScriptPath}"`);
+    });
+  
+
+    context.subscriptions.push(hdisposable);
 }
 
 exports.activate = activate;
